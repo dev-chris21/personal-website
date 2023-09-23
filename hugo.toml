@@ -1,0 +1,136 @@
+baseURL = 'https://dev-chris21.github.io/'
+languageCode = 'en-us'
+title = 'Dev-chris'
+theme = 'PaperMod'
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "UA-123-45"
+pygmentsUseClasses = true
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "Dev-chris"
+  description = "My personal website"
+  keywords = [ "Blog", "Portfolio", "PaperMod" ]
+  author = "Me"
+  images = [ "<link or path of image for opengraph, twitter-cards>" ]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.assets]
+    htmlImage = "/assets/html.webp"
+
+  [params.label]
+    text = "Dev-chris"
+    icon = "/apple-touch-icon.png"
+    iconHeight = 35
+
+  [params.profileMode]
+    enabled = false
+    title = "ExampleSite"
+    subtitle = "This is subtitle"
+    imageUrl = "<img location>"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "posts"
+
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "tags"
+
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "My name is chrispin. Welcome to my corner of the internet. I am a developer and writer who likes to discover stuff that is usefull to myself and others. My blog is a loose collection of thoughts, things learned and links to other articles that are at the frontier of their specialty. "
+
+    [[params.socialIcons]]
+      name = "github"
+      url = "https://github.com/Dev-chris21/"
+    
+    [[params.socialIcons]]
+      name = "discord"
+      url = "https://discord.gg/tjkdhHKU/"
+
+    [[params.socialIcons]]
+      name = "dev.to"
+      url = "https://dev.to/dev-chris21/"
+
+  
+
+[params.analytics.google]
+  SiteVerificationTag = "XYZabc"
+
+[params.analytics.bing]
+  SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+  SiteVerificationTag = "XYZabc"
+
+[params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+[params.editPost]
+  URL = "https://github.com/<path_to_repo>/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  limit = 10
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/Archives/"
+  weight = 10
+[[menu.main]]
+  identifier = "About"
+  name = "About"
+  url = "/about/"
+  weight = 30
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 40
+[[menu.main]]
+  identifier = "Links"
+  name = "Links"
+  url = "/links/"
+  weight = 20
+
+[markup.highlight]
+  noClasses = false
